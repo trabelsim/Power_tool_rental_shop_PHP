@@ -6,31 +6,36 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>KaTra</title>
 </head>
-<body class="text-center">
-    <h2>Wypożyczalnia elektronarzędzi</h2>
-    <img src="img/top.jpg" alt="-" width=1100 height="300">
-    <br><br>
+<body>
+    <div style="text-align:center;">
+        <h2 style="text-align:center;">Wypożyczalnia elektronarzędzi</h2>
+        <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/index.php" role="button">Strona główna</a>
+        <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/users/users.php" role="button">Użytkownicy</a>
+        <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/narzedzia/narzedzia.php" role="button">Narzędzia</a>
+        <a style="text-align:center; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/orders/orders.php" role="button">Zamówienia</a>
+    </div>
     <?php
-        // powitanie
-          
-        $message = "Witamy na naszej stronie!";
-        echo "<h3>$message</h3>";
-    ?>
-    <hr>
-    <h3>Zaloguj się</h3>
-    <form id="log_form" action="narzedzia.php" class="form-inline" method="POST">
-        <!-- pole do login : dane przechowywane są w inputLogin -->
-        <label for="inputLogin" class="sr-only">Login</label>
-        <input type="text" name="inputLogin" class="form-control" placeholder="Login użytkownika" required autofocus>
-        <br>
-        <!-- pole do hasła : dane są przechowywane w inputPassword -->
-        <label for="inputPassword" class="sr-only">Hasło</label>
-        <input type="password" name="inputPassword" class="form-control" placeholder="Hasło" required>
-        <br><br>
-        <button class="btn btn-lg btn-primary btn-block mr-1" type="submit">
-            Login
-        </button>
 
-    </form>
+        // deklaracja zmiennych na potrzeby łączenia się z bazą danych
+        $dns = "mysql:host=localhost;dbname=projekt_db";
+        $username = "root";
+        $password = "mysql";
+
+
+        // łączenie z bazą danych
+        // w przypadku niepowodzenia, błąd zostanie wyświetlony na stronie
+        try{
+            $db = new PDO($dns,$username,$password);
+
+
+        }catch(Exception $e){
+            $error_message = $e->getMessage();
+            echo "<p>Error message : $error_message</p>";
+
+        }
+
+    ?>
+    <br><br>
+    <hr>
 </body>
 </html>
