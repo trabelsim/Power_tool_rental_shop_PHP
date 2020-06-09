@@ -14,7 +14,6 @@
         <a style="text-align:center; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/workers/workers.php" role="button">Pracownicy</a>
         <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/narzedzia/narzedzia.php" role="button">Narzędzia</a>
         <a style="text-align:center; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/orders/orders.php" role="button">Zamówienia</a>
-
         <a style="text-align:center; margin-left:300px;" class="btn btn-primary" href="http://localhost/projekt/logout.php" role="button">Wyloguj się</a>
     </div>
     <?php
@@ -40,5 +39,39 @@
     ?>
     <br><br>
     <hr>
+    <!-- <div style="margin-left:300px;">
+    <a href="users/users.php"><img title="Użytkownicy" src="../icons_homepage/users.png" width="350" height="300"/></a>
+    <a style="margin-left:100px;" href="workers/workers.php"><img title="Pracownicy" src="../icons_homepage/workers.png" width="300" height="250"/></a> 
+    <a style="margin-left:150px;" href="narzedzia/narzedzia.php"><img title="Narzędzia" src="../icons_homepage/narzedzia.png" width="200" height="210"/>></a>
+    <a style="margin-left:150px;" href="orders/orders.php"><img title="Zamówienia" src="../icons_homepage/orders.png" width="200" height="180"/></a> 
+    </div> -->
+    <div style="margin-left:300px;" class="row">
+        <div class="column" style="margin-left:0px; margin-top:30px;">
+            <a href="users/users.php"><img title="Użytkownicy" src="../icons_homepage/users.png" width="350" height="300"/></a>
+        </div>
+        <div class="column" style="margin-left:100px; margin-top:50px;">
+            <a href="workers/workers.php"><img title="Pracownicy" src="../icons_homepage/workers.png" width="300" height="250"/></a> 
+         </div>
+         <div class="column" style="margin-left:150px; margin-top:80px;">
+            <a href="narzedzia/narzedzia.php"><img title="Narzędzia" src="../icons_homepage/narzedzia.png" width="200" height="210"/></a>
+        </div>
+        <div class="column" style="margin-left:150px; margin-top:100px;">
+        <a href="orders/orders.php"><img title="Zamówienia" src="../icons_homepage/orders.png" width="200" height="180"/></a> 
+        </div>
+    </div>
+    <div class="row" margin-left:300px;>
+        <div class="column" style="margin-left:450px; margin-top:10px;">
+            <a href="users/users.php">Użytkownicy</a>
+        </div>
+        <div class="column" style="margin-left:330px; margin-top:10px;">
+            <a href="workers/workers.php">Pracownicy</a> 
+         </div>
+         <div class="column" style="margin-left:300px; margin-top:10px;">
+            <a href="narzedzia/narzedzia.php">Narzędzia</a>
+        </div>
+        <div class="column" style="margin-left:300px; margin-top:10px;">
+        <a href="orders/orders.php">Zamówienia</a> 
+        </div>
+    </div>
 </body>
 </html>

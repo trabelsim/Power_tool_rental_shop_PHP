@@ -53,13 +53,13 @@
     if($statement_mod->execute()){
         echo "Nowy element został wprowadzony";
 
-        if($wartosc_avail == 0 || $wartosc_avail == 1){
+        if($wartosc_avail == 1){
             $update_status_narz = "UPDATE `elements` SET`availability`=:STATUSX WHERE element_id=".$wartosc_urz;
             $stat_update = $db->prepare($update_status_narz);
             $stat_update->bindValue(':STATUSX', 0, PDO::PARAM_INT);
             $stat_update->execute();
             $stat_update->closeCursor();
-        }elseif($wartosc_avail == -2 || $wartosc_avail == -1 || $wartosc_avail == 2){
+        }elseif($wartosc_avail == -2 || $wartosc_avail == -1 || $wartosc_avail == 2 || $wartosc_avail == 0 ){
             $update_status_narz = "UPDATE `elements` SET`availability`=:STATUSX WHERE element_id=".$wartosc_urz;
             $stat_update = $db->prepare($update_status_narz);
             $stat_update->bindValue(':STATUSX', 1, PDO::PARAM_INT);

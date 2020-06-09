@@ -104,7 +104,7 @@
         <a style="text-align:center; margin-left:50px; margin-bottom:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/orders/reservations/reservations.php" role="button">Rezerwacje</a>
         <a style="text-align:center; margin-left:50px; margin-bottom:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/orders/rents/rents.php" role="button">Wypożyczenia</a>
         <a style="text-align:center; margin-left:50px; margin-bottom:50px;" class="btn btn-primary" href="http://localhost/projekt/admin/orders/history/history.php" role="button">Historia</a>
-
+        <a style="text-align:center; margin-left:300px;" class="btn btn-primary" href="http://localhost/projekt/logout.php" role="button">Wyloguj się</a>
     </div>
     <hr>
     <div>

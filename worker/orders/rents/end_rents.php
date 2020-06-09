@@ -8,11 +8,12 @@
 </head>
 <body>
     <div style="text-align:center;">
-        <h2 style="text-align:center;">Wypożyczalnia elektronarzędzi</h2>
+    <h2 style="text-align:center; margin-bottom:50px;">Panel pracownika</h2>
         <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/worker/index.php" role="button">Strona główna</a>
         <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/worker/users/users.php" role="button">Użytkownicy</a>
         <a style="text-align:left; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/worker/narzedzia/narzedzia.php" role="button">Narzędzia</a>
         <a style="text-align:center; margin-left:50px;" class="btn btn-primary" href="http://localhost/projekt/worker/orders/orders.php" role="button">Zamówienia</a>
+        <a style="text-align:center; margin-left:300px;" class="btn btn-primary" href="http://localhost/projekt/logout.php" role="button">Wyloguj się</a>
     </div>
     <?php
 
